@@ -51,7 +51,7 @@ namespace Framework1.Contexts
             //  E.Property(E => E.DateOfCreation).HasDefaultValueSql("GETDATE()");
             //});
 
-            modelBuilder.ApplyConfiguration(new EmployeeConfiguration());
+            modelBuilder.ApplyConfiguration(new EmployeeConfiguration()); 
 
             base.OnModelCreating(modelBuilder);
         }
